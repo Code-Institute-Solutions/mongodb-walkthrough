@@ -62,7 +62,6 @@ def find_record():
     doc = get_record()
     if doc:
         print("")
-        print(doc.count())
         for k, v in doc.items():
             if k != "_id":
                 print(k.capitalize() + ": " + v.capitalize())
